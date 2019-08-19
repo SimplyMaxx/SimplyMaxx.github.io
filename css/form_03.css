@@ -1,0 +1,107 @@
+input[type=text],
+input[type=email] {
+    height: 48px;
+    padding: 15px 20px;
+    background-color: #fff;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border: 1px solid transparent;
+    margin: 0 0 30px 0;
+    display: block;
+    width: 100%;
+    font-family: 'Work Sans',sans-serif;
+}
+
+input[type=text]:focus{
+    outline:none;
+    border: 1px solid gray;
+}
+
+input[type=text]:active{
+    border: 1px solid gray;
+    outline:none;
+}
+
+input[type=text]:hover {
+    outline: none;
+    opacity: 0.8;
+}
+
+input[type=text]::placeholder{
+    color: #858585;
+    font-size: 14px;
+}
+
+input[type=email]:focus {
+    outline: none;
+    border: 1px solid gray;
+}
+
+input[type=email]:active {
+    border: 1px solid gray;
+    outline: none;
+}
+
+input[type=email]:hover {
+    outline: none;
+    opacity: 0.8;
+}
+
+input[type=email]::placeholder {
+    color: #858585;
+    font-size: 14px;
+}
+
+textarea{
+    height: 170px;
+    padding: 15px 20px;
+    background-color: #fff;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border: 1px solid transparent;
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+    font-family: 'Work Sans',sans-serif;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid gray;
+}
+
+textarea:active {
+    border: 1px solid gray;
+    outline: none;
+}
+
+textarea:hover {
+    outline: none;
+    opacity: 0.8;
+}
+
+textarea::placeholder {
+    color: #858585;
+    font-size: 14px;
+}
+
+input[type=submit]{
+    max-width: 180px;
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #252525;
+    padding: 19px 10px;
+}
+
+input[type=submit]:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}

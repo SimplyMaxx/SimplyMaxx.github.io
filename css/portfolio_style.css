@@ -1,0 +1,387 @@
+#wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+body {
+    font-size: 15px;
+    color: #5f5f5f;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f6f6f6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* HEADER Start */
+
+#header {
+    padding: 48px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #6d605b;
+    z-index: 3;
+    padding: 30px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .header-wrapper {
+        display: block;
+        padding: 10px;
+    }
+}
+
+.logo {
+    width: calc(92px - 10px);
+    margin: 0 10px 0 0;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 100%;
+    }
+}
+
+nav {
+    width: calc(100% - 92px);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu.icon-grid {
+    font-size: 32px;
+    text-decoration: none;
+    color: #1d1d1d;
+    margin: 13px 0 35px 3px;
+}
+
+.menu li {
+    font-size: 13px;
+    margin: -3px 41px 0 0;
+    text-transform: uppercase;
+}
+
+.menu li:last-child {
+    margin: -3px 0 0 0;
+}
+
+.menu li a:hover {
+    color: #0e0e0e;
+}
+
+.menu li a {
+    color: #5f5f5f;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .trigger {
+        display: inline-block;
+        margin: 3px;
+        cursor: pointer;
+        position: absolute;
+        right: 25px;
+        top: 5px;
+    }
+
+    .trigger i {
+        display: block;
+        width: 30px;
+        height: 6px;
+        margin: 4px auto;
+        background: #222;
+    }
+
+    .show {
+        display: block;
+        text-align: center;
+    }
+
+    .menu li:last-child {
+        margin: -3px 0 0 -35px !important
+    }
+
+    .logo{
+        margin: 35px 0  0 0;
+    }
+}
+
+/* header end */
+
+.portfolio{
+    height: 1343px;
+}
+
+.item {
+    float: left;
+    height: 390px;
+    width: 33.33%;
+    
+}
+
+.item a{
+    display: block;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item a:hover .item-hover{
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width:992px){
+    .item{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .item{
+        width: 100%;
+    }
+}
+
+
+
+.item-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s;
+}
+
+.item-hover-title{
+    display: block;
+    font-size: 24px;
+    font-family: 'Playfair Display',serif;
+    color: #fff;
+    position: relative;
+    bottom: -30px;
+    transition: all 0.7s;
+}
+
+.item-hover-text{
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: -30px;
+    transition: all 0.7s;
+}
+
+.item a:hover .item-hover .item-hover-title{
+    bottom: 0;
+}
+
+.item a:hover .item-hover .item-hover-text{
+    bottom: 0;
+}
+
+
+.best-progects-section{
+    background-color: #f6f6f6;
+}
+
+.menu-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    font-size: 32px;
+    text-decoration: none;
+    color: #1d1d1d;
+    margin: 37px 0px 35px 3px;
+}
+
+.best-progects{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 100px 0;
+}
+
+.progect{
+    padding: 195px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: transparent;
+    width: 33.33%;
+}
+
+.progect-info{
+    display:flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.progect:hover .progect-info{
+
+    background-color: rgba(10, 10, 10, 0.9);
+}
+
+.progect-info-text{
+    text-align: center;
+    max-width: 235px;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.progect-title{
+    position: relative;
+    bottom: -30px;
+    transition: all 0.7s;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Playfair Display',serif;
+    color: #fff;
+    margin: 0 0 25px 0;
+}
+
+.progect-type{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    font-family: 'Work Sans',sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    bottom: -30px;
+    transition: all 0.7s;
+} 
+
+.load-more-work{
+    padding: 46px 5px 39px;
+    background-color: #fff;
+}
+
+.load-more-work a{
+    color: #1d1d1d;
+    text-decoration: none;
+}
+
+.load-more-work p{
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Work Sans',sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+footer{
+    background-color: #ebebeb;
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 48px 0 0 0 ;
+}
+
+.social-list li {
+    margin: 0 15px 0 0;
+    font-size: 17px;
+    list-style: none;
+}
+
+.social-list li a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.social-list li:last-child {
+    margin: 0;
+}
+
+.copyright {
+    text-align: center;
+    padding: 0 0 52px 0;
+}
+
+.copyright span {
+    margin: 0;
+    padding: 13px 5px;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    color: #999999;
+    display: block;
+} 
