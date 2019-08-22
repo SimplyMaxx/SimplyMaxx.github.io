@@ -161,6 +161,34 @@ nav{
     transition: all 0.5s;
 }
 
+@media screen and (max-width:768px) {
+    .main-slogan {
+        padding: 60px 0 0;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .main-slogan{
+        padding: 40px 0 0;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .subtitle{
+        font-size: 11px;
+    }
+}
+
 
 .main-slogan{
     max-width: 735px;
@@ -215,6 +243,10 @@ nav{
     }
 }
 
+@media screen and (max-width:420px){
+    
+}
+
 .btn-down{
     position: absolute;
     bottom: 64px;
@@ -258,8 +290,31 @@ nav{
 
 @media screen and (max-width:1024px){
    .our-achievements .row{
-       margin: 0 215px 0 215px !important;
+       margin: 0 auto !important;
    }
+
+   .our-achievements .row .col{
+       padding: 0 180px !important;
+   }
+}
+
+@media screen and (max-width:420px) {
+    .our-achievements .row {
+        display: block !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media screen and (max-width:768px){
+    .our-achievements .row .col {
+        padding: 0 250px !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .our-achievements .row .col {
+        padding: 0 115px !important;
+    }
 }
 
 .our-achievements .row{
@@ -609,9 +664,31 @@ blockquote cite{
     background-color: #171717;
 }
 
+.slick-initialized .slick-slide{
+    margin:20px;
+}
+
 /* latest blog end */
 
 /* contact-info start */
+
+@media screen and (max-width:768px){
+    .contact-info .row{
+        display: block !important;
+    }
+
+    .contact{
+        width: 100% !important;
+    }
+
+    .contact-form{
+        width: 100% !important;
+    }
+
+    .contact-info{
+        padding: 30px 0;
+    }
+}
 
 .contact-info .row{
     align-items: flex-start;
@@ -688,7 +765,7 @@ input[type=email] {
     }
 
     .info .row .col.latest-twits {
-        width: calc(50% - 60px) !important;
+        width: calc(50% - 60px);
         margin: 0 0px 20px;
     }
 
@@ -703,6 +780,40 @@ input[type=email] {
 
     .info .row{
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .latest-twits{
+        width: 50% !important;
+    }
+
+    .info .row .col.latest-twits p {
+        font-size: 11px !important;
+    }
+
+    .latest-twits li::before{
+        content: "\e902";
+        font-family: icomoon;
+        position: absolute;
+        left: 10px !important;
+        top: 0;
+        font-size: 12px !important;
+    }
+
+    .info .row .col .footer-title {
+        font-size: 14px !important;
+    }
+
+    .info .row .col.about-us p {
+        font-size: 13px !important;
+    }
+}
+
+@media screen and (max-width:420px){
+    .info .row .col.about-us p {
+        font-size: 11px !important;
     }
 }
 
