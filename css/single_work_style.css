@@ -177,16 +177,21 @@ nav {
 @media screen and (max-width: 1024px){
     .progect-description{
         margin: 0 0 40px !important;
+        width: 100% !important;
+    }
+
+    .progect-info{
+        width: 100% !important;
     }
 
     .progect-wrapper{
-        display: block;
+        display: block !important;
     }
 }
 
 .progect-description{
-    width: calc(902px - 257px);
-    margin: 0 257px 0 0;
+    width: 70%;
+
 }
 
 .progect-description p:first-child{
@@ -194,7 +199,7 @@ nav {
 }
 
 .progect-info{
-    width: calc(1200px - 902px);
+    width: 30%;
 }
 
 .share, .user-name, .post-date {
@@ -235,6 +240,17 @@ nav {
 .video{
     width: 100%;
     height: 563px;
+}
+
+@media screen and (max-width:450px) {
+
+    .go-to {
+        padding: 0px 20px !important;
+    }
+
+    .icon-grid {
+        margin: 55px 0 !important;
+    }
 }
 
 .go-to {

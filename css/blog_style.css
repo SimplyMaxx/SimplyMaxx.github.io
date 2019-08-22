@@ -285,6 +285,21 @@ nav {
     display: block;
 }
 
+@media screen and (max-width:450px){
+    .comment-reply,
+    .comment-date{
+        top: -20px !important;
+    }
+
+    .go-to{
+        padding: 0px 20px !important;
+    }
+
+    .icon-grid{
+        margin: 55px 0 !important;
+    }
+}
+
 .comment-reply, .comment-date{
     color: #171717;
     font-size: 12px;
