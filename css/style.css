@@ -177,7 +177,7 @@ nav{
 
 @media screen and (max-width:420px){
     .main-slogan{
-        padding: 40px 0 0;
+        padding: 30px 0 0;
     }
 
     h1{
@@ -308,6 +308,12 @@ nav{
 @media screen and (max-width:768px){
     .our-achievements .row .col {
         padding: 0 250px !important;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .our-achievements .row .col {
+        padding: 0 200px !important;
     }
 }
 
@@ -460,6 +466,16 @@ nav{
 }
 
 /* testimonials start */
+@media screen and (max-width:768px){
+    .testimonials{
+        padding: 20px 20px !important;
+    }
+
+    .single-item{
+        padding: 0 10px 40px 10px !important;
+    }
+}
+
 .testimonials{
     background-size: cover;
     background-position: center;
@@ -558,6 +574,13 @@ blockquote cite{
 
 /* clients start */
 
+@media screen and (max-width:768px) {
+    .clients{
+        padding: 20px 10px !important;
+    }
+}
+
+
 .clients{
     padding: 65px 10px;
     background-color: #fff;
@@ -579,6 +602,12 @@ blockquote cite{
 
 .latest-blog{
     border-bottom: 1px solid #ccc;
+}
+
+@media screen and (max-width:768px) {
+    .latest-blog{
+        padding: 20px 10px 30px !important;
+    }
 }
 
 .latest-blog .heading{
